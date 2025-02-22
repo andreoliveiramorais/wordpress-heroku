@@ -1,9 +1,9 @@
 {
-  "name": "philippheuer/wordpress-heroku",
+  "name": "andreoliveiramorais/wordpress-heroku",
   "type": "project",
   "license": "MIT",
   "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
-  "homepage": "https://github.com/PhilippHeuer/wordpress-heroku",
+  "homepage": "https://github.com/andreoliveiramorais/wordpress-heroku",
   "keywords": [
 	"bedrock", "wordpress", "stack", "composer", "heroku", "wp"
   ],
@@ -48,7 +48,6 @@
   "extra": {
 	"installer-paths": {
 	  "vendor/dumpster/": [
-		"wpackagist-plugin/redis-cache",
 		"frc/batcache"
 	  ],
 	  "web/app/mu-plugins/{$name}/": [
@@ -67,7 +66,6 @@
 	},
 	"dropin-paths": {
 	  "web/app": [
-		"package:wpackagist-plugin/redis-cache:includes/object-cache.php",
 		"package:frc/batcache:advanced-cache.php"
 	  ]
 	},
